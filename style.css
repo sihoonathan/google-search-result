@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto', arial, sans-serif;
+
+}
+
 .HPVvwb {
     font-family: arial,sans-serif;
     font-size: 14px;
@@ -40,10 +45,12 @@ button {
     grid-auto-columns: 1fr;
     /*grid-auto-rows: 100px;*/
     grid-template-areas:
-            'banner banner search search search search search search . . . apps account'
-            '. . menuSearch menuSearch menuSearch menuSearch menuSearch menuSearch . . . . .';
+            'banner banner search search search search search search search  . . . apps account'
+            '. . menuSearch menuSearch menuSearch menuSearch menuSearch menuSearch menuSearch . . . . .';
     align-items: center;
     padding-top: 30px;
+    border-bottom: 1px solid lightgray;
+
 }
 
 .search_bar .banner {
@@ -80,8 +87,6 @@ button {
     border: 1px solid lightgray;
 }
 
-
-
 #submit {
     padding: 0 15px;
 }
@@ -115,14 +120,56 @@ button {
 #menu_search {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 10px 10px 0;
+    align-items: center;
+    color: #5f6368;
 }
 
-#menu_search button{
-    padding: 10px;
+#menu_search a {
+    padding: 10px 7px 15px;
+    display: inline-block;
+    color: gray;
+    font:13px 'Roboto', arial, sans-serif;
 }
+
+#menu_search a:hover {
+    cursor: pointer;
+}
+
 
 #left_f {
     border-bottom: 2px solid dodgerblue;
 }
 
+.iJddsb svg {
+    width: 16px;
+    height: 16px;
+}
+
+.more-vert {
+    color: grey;
+}
+
+main {
+    display: grid;
+    grid-template-areas:'. . content content  content content content content content . . . . .';
+    width: 1280px;
+    grid-auto-columns: 1fr;
+    /*height: 2000px;*/
+
+}
+
+main > section {
+    grid-area: content;
+    padding: 30px 17px;
+    height: 2000px;
+}
+
+.ad {
+    display: inline-flex;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
